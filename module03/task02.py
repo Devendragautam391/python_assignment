@@ -1,5 +1,5 @@
-cabin_class=input("Enter the cabin calss(Lux/A/B/C):").upper()
-if cabin_class=="Lux":
+cabin_class=input("Enter the cabin calss(L/A/B/C):").upper()
+if cabin_class=="L":
          print("Upper-deck cabin with a balcony")
 elif cabin_class=="A":
         print("Cabin above the car deck with window")
