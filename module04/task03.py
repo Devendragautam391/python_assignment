@@ -7,11 +7,7 @@ else:
         number = input("Enter another number (or press Enter to stop): ")
         if number == "":
             break
-        try:
-            num = float(number)
-        except ValueError:
-            print("Invalid input, please enter a valid number.")
-            continue
+        num = float(number)
         if num < smallest:
             smallest = num
         elif num > largest:
