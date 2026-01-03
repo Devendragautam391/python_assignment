@@ -3,24 +3,24 @@ class Publication:
         self.name = name
 
 class Book(Publication):
-    def __init__(self, name, author, page_count):
+    def __init__(self, name, author, pages):
         super().__init__(name)
         self.author = author
-        self.page_count = page_count
+        self.pages= pages
 
     def print_information(self):
-        print(f"Book: {self.name}, Author: {self.author}, Pages: {self.page_count}")
+        print(f"Book: {self.name}, Author: {self.author}, Pages: {self.pages}")
 
 class Magazine(Publication):
-    def __init__(self, name, chief_editor):
+    def __init__(self, name, editor):
         super().__init__(name)
-        self.chief_editor = chief_editor
+        self.editor = editor
 
     def print_information(self):
-        print(f"Magazine: {self.name}, Chief Editor: {self.chief_editor}")
+        print(f"Magazine: {self.name}, Chief Editor: {self.editor}")
 
-donald_duck = Magazine("Donald Duck", "Aki Hyyppä")
-compartment_no_6 = Book("Compartment No. 6", "Rosa Liksom", 192)
+m1 = Magazine("Donald Duck", "Aki Hyyppä")
+b1 = Book("Compartment No.6", "Rosa Liksom", 192)
 
-donald_duck.print_information()
-compartment_no_6.print_information()
+m1.print_information()
+b1.print_information()
